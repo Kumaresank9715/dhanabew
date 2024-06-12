@@ -134,7 +134,7 @@ async def save_media_in_channel(bot: Client, editable: Message, message: Message
         await editable.edit(
             f"**{caption} - {file_size}\n\n{share_link}**",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Open Link", url=short_link)],
+                [[InlineKeyboardButton("Open Link", url=share_link)],
                  [InlineKeyboardButton("Bots Channel", url="https://telegram.me/AS_botzz"),
                   InlineKeyboardButton("Support Group", url="https://telegram.me/moviekoodu")]]
             ),
