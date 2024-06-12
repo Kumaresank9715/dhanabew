@@ -84,7 +84,7 @@ async def save_batch_media_in_channel(bot: Client, editable: Message, message_id
         share_link = f"https://tamilserialbot2.jasurun.workers.dev?start=Shakthimaan_{str_to_b64(str(SaveMessage.id))}"
         #short_link = get_short(share_link)
         await editable.edit(
-            f"**🔻 Direct Telegram Files 🔻\n\n{short_link}\n\n⁉️ How to Download ▼\n**",
+            f"**🔻 Direct Telegram Files 🔻\n\n{share_link}\n\n⁉️ How to Download ▼\n**",
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Open Link", url=share_link)],
                  [InlineKeyboardButton("Bots Channel", url="https://telegram.me/AS_botzz"),
@@ -96,7 +96,7 @@ async def save_batch_media_in_channel(bot: Client, editable: Message, message_id
             chat_id=int(Config.LOG_CHANNEL),
             text=f"#BATCH_SAVE:\n\n[{editable.reply_to_message.from_user.first_name}](tg://user?id={editable.reply_to_message.from_user.id}) Got Batch Link!",
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Open Link", url=short_link)]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Open Link", url=share_link)]])
         )
     except Exception as err:
         await editable.edit(f"Something Went Wrong!\n\n**Error:** `{err}`")
