@@ -5,20 +5,20 @@ import os
 
 
 class Config(object):
-	API_ID = int(os.environ.get("API_ID", "1923471"))
-	API_HASH = os.environ.get("API_HASH", "fcdc178451cd234e63faefd38895c991")
-	BOT_TOKEN = os.environ.get("BOT_TOKEN", "6929152778:AAEXv17Ak6C2pXmQXh58iSEud1Vh5qtoqTE")
-	BOT_USERNAME = os.environ.get("BOT_USERNAME", "nonamebestybot")
-	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1001814192750"))
-	BOT_OWNER = int(os.environ.get("BOT_OWNER", "880087645"))
-	DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://leecher:leecher@cluster0.606mkpi.mongodb.net/?retryWrites=true&w=majority")
-	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "moviekoodu")
+	API_ID = int(os.environ.get("API_ID", "27509926"))
+	API_HASH = os.environ.get("API_HASH", "cd402f7d7fb568e04d01120ff51b20b2")
+	BOT_TOKEN = os.environ.get("BOT_TOKEN", "6951344885:AAE3L1CWdsWMjAZpCrQIqfk3wC2KA77Itpk")
+	BOT_USERNAME = os.environ.get("BOT_USERNAME", "Movies_TamilHD7_Bot")
+	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1002063173963"))
+	BOT_OWNER = int(os.environ.get("BOT_OWNER", "538239027"))
+	DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://dhanapal:dhanapal@dhanapal.pvrwtmv.mongodb.net/?retryWrites=true&w=majority")
+	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1002031352202")
 	LOG_CHANNEL = "-1001966055101"
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
 	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
-	SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "vipurl.in")
-	SHORTLINK_API = os.environ.get('SHORTLINK_API', "5ef4a4aeeb9be77f4060ac10d1e911a5183e5b49")
+	SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "")
+	SHORTLINK_API = os.environ.get('SHORTLINK_API', "")
 	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001362659779 -1001255795497").split()))
 	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
 	ABOUT_BOT_TEXT = f"""
