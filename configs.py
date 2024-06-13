@@ -9,7 +9,7 @@ class Config(object):
 	API_HASH = os.environ.get("API_HASH", "cd402f7d7fb568e04d01120ff51b20b2")
 	BOT_TOKEN = os.environ.get("BOT_TOKEN", "7354416171:AAGoxOTHMi0-6XNcvh6MLVCzvovB_pfrZmQ")
 	BOT_USERNAME = os.environ.get("BOT_USERNAME", "Movies_TamilHD8_Bot")
-	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1002063173963")
+	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1002063173963"))
 	BOT_OWNER = int(os.environ.get("BOT_OWNER", "538239027"))
 	DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://dhanapal:dhanapal@dhanapal.pvrwtmv.mongodb.net/?retryWrites=true&w=majority")
 	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "Movies_TamilHD1/3")
