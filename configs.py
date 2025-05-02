@@ -8,7 +8,7 @@ class Config(object):
 	API_ID = int(os.environ.get("API_ID", "27509926"))
 	API_HASH = os.environ.get("API_HASH", "cd402f7d7fb568e04d01120ff51b20b2")
 	BOT_TOKEN = os.environ.get("BOT_TOKEN")
-	BOT_USERNAME = os.environ.get("BOT_USERNAME", "Movies_TamilHD9_Bot")
+	BOT_USERNAME = os.environ.get("BOT_USERNAME", "Movies_TamilHD10_Bot")
 	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1002063173963"))
 	BOT_OWNER = int(os.environ.get("BOT_OWNER", "538239027"))
 	DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://dhanapal:dhanapal@dhanapal.pvrwtmv.mongodb.net/?retryWrites=true&w=majority")
