@@ -1,5 +1,5 @@
 services:
-  - type: worker # This might be 'web' for you
+  - type: web # This might be 'web' for you
     name: my-telegram-bot
     env: python
     startCommand: "gunicorn app:app & python3 bot.py"
