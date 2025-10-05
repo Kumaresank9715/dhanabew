@@ -1,0 +1,6 @@
+services:
+  - type: worker # This might be 'web' for you
+    name: my-telegram-bot
+    env: python
+    startCommand: "python bot.py"
+    instances: 1  # <-- THIS IS THE FIX. MAKE SURE IT IS 1.
